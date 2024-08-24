@@ -74,7 +74,7 @@ nav ul li a:hover {
         box-shadow: 0 0 20px #ff4500;
     }
     100% {
-        border-color: #1e90ff;
+        border-color: #1e89f3;
         box-shadow: 0 0 5px #1e90ff;
     }
 }
@@ -94,3 +94,81 @@ section {
     color: #fff;
     margin-bottom: 10px;
 }
+
+#home p {
+    font-size: 1.2em;
+    color: lightgray;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+.home-highlights {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.highlight-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-item h3 {
+    font-size: 1.5em;
+    color: dodgerblue;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    font-size: 1.1em;
+    color: lightgray;
+    line-height: 1.5em;
+}
+
+#about h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkgray;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: gray;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-team {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+    .team-member {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
+        min-width: 220px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
