@@ -311,3 +311,123 @@ textarea {
     resize: vertical;
     height: 150px;
 }
+
+
+button[type="submit"] {
+    background-color: limegreen;
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: forestgreen;
+}
+
+button[type="submit"] {
+    border: 2px solid limegreen;
+    animation: glowingButton 1.5s infinite;
+}
+
+@keyframes glowingButton {
+    0% {
+        border-color: limegreen;
+        box-shadow: 0 0 5px limegreen;
+    }
+    50% {
+        border-color: orangered;
+        box-shadow: 0 0 20px orangered;
+    }
+    100% {
+        border-color: limegreen;
+        box-shadow: 0 0 5px limegreen;
+    }
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: dodgerblue;
+}
+
+@media (max-width: 768px) {
+    .highlight-item,
+    .team-member,
+    .game-item,
+    .news-item {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .highlight-item,
+    .team-member,
+    .game-item,
+    .news-item {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
+
+input[typ="email"] {
+    border-color: red;
+}
