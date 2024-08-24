@@ -172,3 +172,142 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.team-member h3 {
+    font-size: 1.6em;
+    color: dodgerblue;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+
+
+#games h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkgray;
+}
+
+.game-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.game-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.game-item h3 {
+    font-size: 1.6em;
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.game-item p {
+    font-size: 1.1em;
+    color: darkgray;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+}
+
+#news h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkgray;
+}
+
+.news-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 1.6em;
+    color: limegreen;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1.1em;
+    color: darkgray;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkgray;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: gray;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.1em;
+    color: darkgray;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
