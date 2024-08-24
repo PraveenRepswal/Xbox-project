@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+a:hover {
+    color: deepskyblue;
+    transition: color 0.3s ease-in-out;
+}
+
+.subscription-container {
+    max-width: 700px;
+    margin: 55px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.subscription-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+}
+
+.back-button {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    font-size: 1.4em;
+    color: limegreen;
+    font-weight: bold;
+    /* background-color: black; */
+    padding: 10px;
+    border-radius: 50%;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding-bottom: 3px;
+}
+
+.back-button:hover {
+    color: lightgreen;
+    background-color: darkgreen;
+}
+
+.message-box {
+    padding: 30px;
+    background: linear-gradient(145deg, black, darkgray);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 3px solid lightgreen;
+}
+
+.message-box h1 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 255, 0);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.message-box p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: gainsboro;
+}
+
+.message-box p#wow {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('Images/hoorey.png');
+}
+
+.message-box p#wow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Images/hoorey.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 8px;
+}
