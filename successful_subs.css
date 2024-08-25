@@ -73,24 +73,24 @@ a:hover {
     color: rgb(0, 255, 0);
     font-size: 2.5em;
     margin-bottom: 15px;
+    
 }
 
-.message-box p {
+.message-box section {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color: gainsboro;
+    color: rgb(255, 0, 0);
 }
 
-.message-box p#wow {
+.message-box section #wow {
     position: relative;
     padding: 20px;
     border-radius: 8px;
     background-size: cover;
     background-position: center;
-    background-image: url('Images/hoorey.png');
 }
 
-.message-box p#wow::before {
+.message-box section #wow::before {
     content: "";
     position: absolute;
     top: 0;
@@ -103,4 +103,73 @@ a:hover {
     opacity: 0.5;
     z-index: -1;
     border-radius: 8px;
+}
+
+.message-box section #wow div {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: lightgreen;
+    margin-bottom: 25px;
+    border-bottom: 2px solid lightgreen;
+    padding-bottom: 10px;
+    background: transparent;
+}
+
+.fun-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(to bottom right, slategray, dimgray);
+    border-radius: 12px;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.fun-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.fun-section p {
+    font-size: 1.3em;
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+input[type="color"] {
+    margin-top: 15px;
+    padding: 8px;
+    border: 2px solid lightgreen;
+    border-radius: 6px;
+    background-color: dimgrey;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+input[type="color"]:hover {
+    background-color: gray;
+    box-shadow: 0 0 10px lightgreen;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 4px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid lightgreen;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
 }
