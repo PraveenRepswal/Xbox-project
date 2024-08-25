@@ -192,6 +192,17 @@ footer {
     color: #0088cc;
 }
 
+.footer-column i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #00a1ff;
+    transition: transform 0.3s;
+}
+
+.footer-column a:hover i {
+    transform: scale(1.2);
+}
+
 /* Media queries for responsiveness */
 
 @media (max-width: 768px) {
@@ -209,4 +220,105 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+section#support h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+footer p, footer ul {
+    line-height: 1.5;
+}
+
+
+
+button {
+    background-color: #00a1ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00a1ff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #0088cc;
+    outline: none;
+}
+
+/* Gradient background effects */
+
+header {
+    background: linear-gradient(to right, #001f3f, #0074D9);
+}
+
+    footer {
+        background: linear-gradient(to left, #001f3f, #0074D9);
+    }
+
+    section#support .support-detail {
+        background: radial-gradient(circle, #2a2a2a, #1b1b1b);
+    }
+
+.faq-item summary {
+    background: linear-gradient(to right, #333, #222);
+}
+
+.faq-item .faq-answer {
+    background: linear-gradient(to bottom, #2b2b2b, #1b1b1b);
+}
+
+
+header h1, nav ul li a, section#support h2, section#faq h2, footer h3, button {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.support-detail p, .faq-answer p, footer p, footer ul li {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
