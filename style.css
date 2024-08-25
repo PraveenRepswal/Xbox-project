@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 #modeToggle {
     border: 2px solid #1e90ff;
-    animation: glowing 1.5s infinite;
+    animation: glowing 3s alternate;
 }
 
 @keyframes glowing {
@@ -71,7 +71,7 @@ nav ul li a:hover {
     }
     50% {
         border-color: #ff4500;
-        box-shadow: 0 0 20px #ff4500;
+        box-shadow: 0 0 20px #ff00ee;
     }
     100% {
         border-color: #1e89f3;
@@ -430,4 +430,61 @@ footer {
 
 input[typ="email"] {
     border-color: red;
+}
+
+/* New styles for the contact card */
+.card-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    perspective: 1000px;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    height: 300px;
+    background-color: white;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.card-wrapper:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: inherit;
+}
+
+.card-front {
+    display: flex;
+    background: linear-gradient(100deg, rgba(168, 220, 245, 0.452), rgb(37, 44, 59));
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 80%;
+}
+
+.left h4 {
+    margin: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
