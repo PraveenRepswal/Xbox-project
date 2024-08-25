@@ -322,3 +322,58 @@ header h1, nav ul li a, section#support h2, section#faq h2, footer h3, button {
 .support-detail p, .faq-answer p, footer p, footer ul li {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 136, 204, 0.5);
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 8px rgba(0, 136, 204, 0.5);
+}
+
+.footer-column a:hover i {
+    color: #fff;
+}
+
+.faq-item summary:hover {
+    box-shadow: 0 0 8px rgba(0, 136, 204, 0.5);
+}
+
+h2, h3 {
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+footer h3, footer p, footer ul li {
+    font-size: 0.9rem;
+}
+
+
+p {
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+
+/* Dark Mode Color Adjustments */
+
+body {
+    color: #d1d1d1;
+}
+
+a, .support-detail a, nav ul li a, button, .footer-column a, i {
+    color: #00a1ff;
+}
+
+header {
+    background-color: #1b1b1b;
+}
+
+footer {
+    background-color: #1b1b1b;
+}
+
