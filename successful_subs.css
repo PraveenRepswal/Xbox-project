@@ -79,7 +79,7 @@ a:hover {
 .message-box section {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color: rgb(255, 0, 0);
+    color: gainsboro;
 }
 
 .message-box section #wow {
@@ -97,7 +97,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('Images/hoorey.png');
+    background-image: url('Images/Designer.png');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -172,4 +172,53 @@ footer {
 footer p {
     font-size: 1.1em;
     margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .subscription-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .back-button {
+        top: -30px;
+        font-size: 1.2em;
+    }
+
+    .message-box h1 {
+        font-size: 2em;
+    }
+
+    .fun-section {
+        padding: 20px;
+    }
+
+    .fun-section p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-container {
+        padding: 15px;
+    }
+
+    .back-button {
+        top: -25px;
+        font-size: 1em;
+    }
+
+    .message-box h1 {
+        font-size: 1.8em;
+    }
+
+    .fun-section {
+        padding: 15px;
+    }
+
+    .fun-section p {
+        font-size: 1.1em;
+    }
 }
