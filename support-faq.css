@@ -44,3 +44,57 @@ nav ul li a {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
+
+nav ul li a:hover {
+    background-color: #005f99;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section#support h2,
+section#faq h2 {
+    font-size: 2rem;
+    color: #00a1ff;
+    border-bottom: 2px solid #00a1ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section#support p,
+section#faq p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.support-detail {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00a1ff;
+    border-radius: 5px;
+}
+
+.support-detail p {
+    margin-bottom: 10px;
+}
+
+.support-detail a {
+    color: #00a1ff;
+    text-decoration: underline;
+}
+
+.support-detail a:hover {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #00a1ff;
+}
