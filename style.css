@@ -488,3 +488,42 @@ input[typ="email"] {
     font-size: 18px;
     letter-spacing: 1px;
 }
+
+
+.left span {
+    text-transform: uppercase;
+    color: #0d5692;
+}
+
+.right {
+    width: 60%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-content i {
+    margin-right: 10px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back img {
+    width: 40%;
+}
