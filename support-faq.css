@@ -383,10 +383,10 @@ footer {
 
 .faq-item summary:hover {
     background-color: #444
-
+}
 
 support-detail p {
-    font-szie: 1rem;
+    font-size: 1rem;
 }
 
 header {
@@ -417,7 +417,7 @@ h2, h3 {
 }
 
 nav ul li a {
-    font-szie: 1.1rem;
+    font-size: 1.1rem;
     text-transform: upcase;
 }
 
