@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Sign Up and Login</title>
+    <title>Sign Up and Login Form</title>
     <link rel="stylesheet" href="sign-up_login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-container" style="background-image: url('Images/Xbox\ paradise.png'); background-size: cover; background-position: center;">
-            <input type="checkbox" id="toggle" aria-hidden="true">
+    <div class="form-container">
+        <input type="checkbox" id="chkbox" aria-hidden="true">
 
-            <div class="signup-form">
-                <form>
-                    <h2>Sign Up</h2>
-                    <input type="text" name="username" placeholder="User Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <input type="password" name="confirm-password" placeholder="Confirm Password" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-
-            <div class="login-form">
-                <form>
-                    <h2>Login</h2>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <button type="submit">Login</button>
-                </form>
-            </div>
+        <div class="signup">
+            <form>
+                <label for="chkbox" aria-hidden="true">Sign up</label>
+                <input type="text" name="username" placeholder="User name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button>Sign up</button>
+                <p class="switch-txt">Already have an account? <label for="chkbox">Login</label></p>
+            </form>
         </div>
 
+        <div class="login">
+            <form>
+                <label for="chkbox" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button>Login</button>
+                <p class="switch-txt">Don't have an account? <label for="chkbox">Sign up</label></p>
+            </form>
+        </div>
+    </div>
+
+    <div>
         <div class="info-section">
             <h3>Why Join Xbox?</h3>
             <p>As a member, enjoy exclusive gaming content, early access to upcoming releases, and special discounts.</p>
