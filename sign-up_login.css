@@ -116,3 +116,68 @@ button:active {
 #chkbox:checked ~ .signup label {
     transform: scale(0.6);
 }
+
+
+.signup {
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    border-radius: 50% / 10%;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.8s ease-in-out, box-shadow 0.5s ease;
+}
+
+.signup label {
+    color: #ffffff;
+    font-size: 2.5em;
+    transform: scale(1);
+}
+
+.signup input, .login input {
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #573b8a;
+    box-shadow: 0 0 8px rgba(87, 59, 138, 0.5);
+}
+
+.signup input::placeholder, .login input::placeholder {
+    color: #777;
+}
+
+.signup button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.signup button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0px 5px 15px rgba(255, 67, 59, 0.3);
+}
+
+.login button {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+}
+
+.login button:hover {
+    background: linear-gradient(45deg, #5b86e5, #36d1dc);
+    box-shadow: 0px 5px 15px rgba(91, 134, 229, 0.3);
+}
+
+.signup input:focus, .login input:focus {
+    border-color: #6a11cb;
+}
+
+input::placeholder {
+    color: #999;
+    font-weight: 400;
+}
