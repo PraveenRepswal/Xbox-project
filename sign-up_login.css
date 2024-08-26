@@ -99,3 +99,45 @@ button:hover {
     transform: scale(0.6);
 }
 
+
+.info-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.info-section h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #57a773;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.info-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.info-section a {
+    color: #57a773;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.info-section a:hover {
+    color: #6be292;
+}
