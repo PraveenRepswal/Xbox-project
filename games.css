@@ -122,6 +122,7 @@ body {
     top: 0;
     z-index: 1000;
     transition: background 0.3s ease;
+    border-radius: 5%;
 }
 
 .main-header .logo h1 {
