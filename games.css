@@ -4,6 +4,8 @@ body {
     background-color: #f2f2f2;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    /* background-image: linear-gradient(0deg, #3D005C, #19006B);
+    transform-style: preserve-3d; */
   }
   
   * {
