@@ -1,229 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: white;
     margin: 0;
     padding: 0;
-    line-height: 1.6em;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff0059, #00ddff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
-a {
-    text-decoration: none;
-    color: dodgerblue;
-}
-
-a:hover {
-    color: deepskyblue;
-    transition: color 0.3s ease-in-out;
 }
 
 .subscription-container {
-    max-width: 700px;
-    margin: 55px auto;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.85);
+    width: 85%;
+    max-width: 950px;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
     position: relative;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-}
-
-.subscription-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+    animation: fadeIn 1s ease forwards;
 }
 
 .back-button {
     position: absolute;
-    top: -40px;
-    left: 20px;
-    font-size: 1.4em;
-    color: limegreen;
-    font-weight: bold;
-    /* background-color: black; */
-    padding: 10px;
-    border-radius: 50%;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    padding-bottom: 3px;
+    top: 15px;
+    left: 15px;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
-    color: lightgreen;
-    background-color: darkgreen;
-}
-
-.message-box {
-    padding: 30px;
-    background: linear-gradient(145deg, black, darkgray);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 3px solid lightgreen;
+    background: linear-gradient(to right, #b98eff, #ca45ff);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .message-box h1 {
-    align-items: center;
     justify-content: center;
-    color: rgb(0, 255, 0);
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    
+    allign-items: center;      /* Try to find the solution of these as the text is not centered */
+    align-self: center;
+    font-size: 2.8em;
+    color: lightgreen;
+    margin-bottom: 20px;
+    animation: glowText 2s infinite alternate;
 }
 
 .message-box section {
-    font-size: 1.2em;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    padding: 25px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    color: gainsboro;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease forwards;
 }
 
-.message-box section #wow {
-    position: relative;
-    padding: 20px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
+.message-box p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
-.message-box section #wow::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('Images/Designer.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    z-index: -1;
-    border-radius: 8px;
-}
-
-.message-box section #wow div {
-    font-size: 1.3em;
+.message-box a {
+    color: #1e3c72;
+    text-decoration: none;
     font-weight: bold;
-    color: lightgreen;
-    margin-bottom: 25px;
-    border-bottom: 2px solid lightgreen;
-    padding-bottom: 10px;
-    background: transparent;
+    transition: color 0.3s ease;
+}
+
+.message-box a:hover {
+    color: #2a6bdb;
 }
 
 .fun-section {
-    text-align: center;
-    margin: 40px auto;
-    padding: 25px;
-    background: linear-gradient(to bottom right, slategray, dimgray);
-    border-radius: 12px;
-    max-width: 500px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-}
-
-.fun-section:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
-}
-
-.fun-section p {
-    font-size: 1.3em;
-    color: lightgray;
-    margin-bottom: 20px;
-}
-
-input[type="color"] {
-    margin-top: 15px;
-    padding: 8px;
-    border: 2px solid lightgreen;
-    border-radius: 6px;
-    background-color: dimgrey;
-    cursor: pointer;
-    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-}
-
-input[type="color"]:hover {
-    background-color: gray;
-    box-shadow: 0 0 10px lightgreen;
-}
-
-input[type="color"]::-webkit-color-swatch {
-    border-radius: 4px;
-}
-
-input[type="color"]::-webkit-color-swatch-wrapper {
-    padding: 0;
-    border-radius: 4px;
-}
-
-footer {
-    background-color: black;
-    color: white;
+    margin-top: 30px;
     padding: 20px;
-    text-align: center;
-    border-top: 2px solid lightgreen;
-}
-
-footer p {
-    font-size: 1.1em;
-    margin: 0;
-}
-
-
-
-@media (max-width: 768px) {
-    .subscription-container {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .back-button {
-        top: -30px;
-        font-size: 1.2em;
-    }
-
-    .message-box h1 {
-        font-size: 2em;
-    }
-
-    .fun-section {
-        padding: 20px;
-    }
-
-    .fun-section p {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .subscription-container {
-        padding: 15px;
-    }
-
-    .back-button {
-        top: -25px;
-        font-size: 1em;
-    }
-
-    .message-box h1 {
-        font-size: 1.8em;
-    }
-
-    .fun-section {
-        padding: 15px;
-    }
-
-    .fun-section p {
-        font-size: 1.1em;
-    }
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.6s ease forwards;
+    max-width: 450px;
 }
