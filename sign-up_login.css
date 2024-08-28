@@ -21,6 +21,7 @@ body {
 
 #chkbox {
     display: none;
+    justify-content: center;
 }
 
 .signup, .login {
@@ -41,6 +42,10 @@ label {
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
+}
+
+.chkbox1 {
+    cursor: text;
 }
 
 input {
@@ -72,14 +77,15 @@ button:hover {
 }
 
 .signup {
-    z-index: 1;
+    z-index: 2;
+    transform: translateY(0);
 }
 
 .login {
-    background: #eee;
+    background: white;
     border-radius: 60% / 10%;
-    transform: translateY(-180px);
-    z-index: 2;
+    transform: translateY(100%);
+    z-index: 1;
 }
 
 .login label {
@@ -88,7 +94,8 @@ button:hover {
 }
 
 #chkbox:checked ~ .login {
-    transform: translateY(-500px);
+    transform: translateY(0);
+    z-index: 2;
 }
 
 #chkbox:checked ~ .login label {
@@ -96,7 +103,7 @@ button:hover {
 }
 
 #chkbox:checked ~ .signup label {
-    transform: scale(0.6);
+    transform: translateY(500px);
 }
 
 

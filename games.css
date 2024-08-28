@@ -4,8 +4,10 @@ body {
     background-color: #f2f2f2;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-image: linear-gradient(0deg, #aa00ff, #15b9ff);
-    transform-style: preserve-3d;
+    background-color: #0a0a0a;
+    color: black;
+    overflow: hidden;
+    position: relative;
   }
   
   * {
@@ -233,57 +235,70 @@ body {
 
 
 
-
-
-  .containerxx {
-    width: 5%;
-    aspect-ratio: 1;
+  .cube-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    z-index: 0;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
     transform-style: preserve-3d;
-    transform: translateY(10vh) rotate3d(0, 0, 0, 360deg) scale(0);
-    animation: rotateAnimation 10s linear infinite;
-    animation-delay: calc(var(--i) * 0.25s);
-  }
+    animation: spin 10s infinite linear;
+}
 
-  @keyframes rotateAnimation {
-    0% {
-      transform: translateY(10vh) rotate3d(0, 0, 0, 0deg) scale(0);
+@keyframes spin {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
     }
-    5% {
-      transform: translateY(10vh) rotate3d(0.1, 1, 0.1, 120deg) scale(0.5);
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
     }
-    35% {
-      transform: translateY(-25vh) rotate3d(0.1, 1, 0.2, 240deg) scale(1);
-    }
-    100% {
-      transform: translateY(-110vh) rotate3d(0.1, 1, 0.3, 360deg) scale(1);
-    }
-  }
+}
 
-  .containerxx:hover {
-    animation-play-state: paused;
-  }
-
-  .item {
+.side {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    aspect-ratio: 1;
-    position: absolute;
-    background-color: #FFC800;
-    transform: rotate3d(var(--x), var(--y), 0, 90deg) translateZ(1.3vw);
-    border: 20% solid #FFB400;
-    box-shadow: 0 0 0.15vw #FF9600,
-                0 0 0.3vw #FF9600,
-                0 0 0.45vw #FF9600,
-                0 0 0.6vw #FF9600,
-                0 0 0.75vw #FF9600;
-  }
+    font-size: 24px;
+    color: #00ff00;
+    text-align: center;
+    line-height: 200px;
+}
 
-  .item:nth-child(2) {
-    transform: rotate3d(var(--x), var(--y), 0, 180deg) translateZ(1.3vw);
-  }
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
