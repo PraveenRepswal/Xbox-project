@@ -186,3 +186,72 @@ body {
     background-color: #00A9FF;
     color: white;
 }
+
+
+.one {
+    float: left;
+}
+
+.done {
+    text-align: center;
+    font-size: 1.7em;
+    color: #00A9FF;
+}
+
+.pricing {
+    font-size: 6em;
+    position: relative;
+    top: -50px;
+    left: 70px;
+}
+
+.dollar {
+    font-size: 3em;
+    position: relative;
+    top: -300px;
+    left: 40px;
+}
+
+.mo {
+    font-size: 1.5em;
+    position: relative;
+    top: -320px;
+    left: 170px;
+}
+
+.project {
+    font-size: 1em;
+    width: 500px;
+    margin: auto;
+    margin-top: -300px;
+    margin-left: 60px;
+}
+
+/* Button Styling */
+.select-buttons {
+    width: 150px;
+    height: 40px;
+    border: 1.7px solid #06D4ED;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.select-buttons p {
+    color: #00A9FF;
+    opacity: 1;
+    text-align: center;
+    line-height: 15px;
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
+}
+
+.select-buttons:hover {
+    background-color: #00A9FF;
+    color: white;
+}
