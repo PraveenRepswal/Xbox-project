@@ -415,10 +415,55 @@ footer {
     align-items: center;
 }
 
+.footer-column form button {
+    width: fit-content;
+}
+
+.footer-column form button:hover {
+    background: linear-gradient(45deg, #fda085, #f6d365, #1de840, #1ddde8, #dd00f3, #FF00FF);
+    background-size: 600% 600%;
+    animation: animatedgradient 5s ease alternate infinite;
+}
+
 #contact .container form {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #005bb5;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* #contact .container form label {
