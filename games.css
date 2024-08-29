@@ -51,14 +51,19 @@ body {
     box-shadow: 10px 10px 20px #e1e1e3, -10px -10px 20px #ffffff;
     margin-bottom: 0.5rem;
   }
-  
+
   .property-image {
-    height: 6em;
+    height: 25em;
+    
     width: 14em;
+    /* padding-bottom: 8em; */
+    /* height: fit-content;
+    width: fit-content; */
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
+    transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform-origin: center; /* Ensure the image zooms from the center */
+}
   
   .property-description {
     background-color: #FAFAFC;
@@ -77,8 +82,8 @@ body {
   }
   
   .property-card:hover .property-image {
-    height: 18em;
-  }
+    transform: scale(2);
+}
   
   .property-social-icons {
     width: 1em;
@@ -217,7 +222,6 @@ body {
     }
 }
 
-  
   
   .main-footer {
     background-color: #333;

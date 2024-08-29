@@ -79,6 +79,7 @@ body {
 }
 
 .fun-section {
+    margin-left: auto;
     margin-top: 30px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.85);
@@ -96,9 +97,15 @@ body {
 }
 
 #colorPick {
-    width: 80%;
-    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 200px;
+    min-width: 150px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;

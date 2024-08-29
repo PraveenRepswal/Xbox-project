@@ -176,7 +176,11 @@ section {
 .team-member h3 {
     font-size: 1.6em;
     color: dodgerblue;
+    display: flex;
     margin-bottom: 5px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-member p {
@@ -404,6 +408,24 @@ footer {
 .footer-links a:hover {
     color: dodgerblue;
 }
+
+.footer-column form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #contact .container form label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+} */
 
 @media (max-width: 768px) {
     .highlight-item,
