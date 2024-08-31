@@ -65,7 +65,7 @@ To run this project locally, follow these steps:
 Open the index.html to sun the project.
 
 
-***To experience the website live:*** 
+***To experience the website live:*** https://praveenrepswal.github.io/Xbox-project/
 
 ## Usage
 Once the project is set up, user can navigate through the website using the links provided in the header and footer (Last two links present in navbar redirects to another pages, remaining links takes you to the different part of homepage). Explore the Products , browse the game titles, Sign-Up and Login through the Sign-Up Login page.
