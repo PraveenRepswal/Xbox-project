@@ -66,6 +66,7 @@ Open the index.html to sun the project.
 
 
 ***To experience the website live:*** https://praveenrepswal.github.io/Xbox-project/
+
 *To navigate to other pages use the last 2 buttons in navbar*
 
 ## Usage
@@ -92,8 +93,7 @@ This project is licensed under the Unknown License - see the LICENSE file for de
 3. ***The gamepass page is not completed yet, hopefully it will be completed by the end of the Arcade event***
 
 ## Media
-
-![Homepage](https://github.com/user-attachments/assets/c80592a9-e770-428e-b10e-ff4ad813d9fd)
+![image](https://github.com/user-attachments/assets/7a305e54-079e-4242-acdf-584477c83443)
 ![Homepage](https://github.com/user-attachments/assets/cf74c3b1-dcba-43f8-afcf-890311429f0e)
 ![Games](https://github.com/user-attachments/assets/fbf47449-342f-4f9d-9813-afef8fa5291b)
 ![Sign-Up](https://github.com/user-attachments/assets/c33e977b-5f10-4364-8dba-0380bcae8b60)
