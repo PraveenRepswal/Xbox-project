@@ -6,6 +6,13 @@
     <title>Xbox Universe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    <!-- Generated the JS code using AI -->
 </head>
 <body>
     <header>
@@ -15,7 +22,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#games">Games</a></li>
+                    <!-- <li><a href="#games">Games</a></li> -->
                     <li><a href="#news">News</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="games.html">Games</a></li>
@@ -184,7 +191,7 @@
                 <label for="message">Your Messge:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Send Messge</button>
+                <button type="submit" class="send-message-btn">Send Messge</button>
             </form>
 
             <p>Follow us on social media for the latest updates:</p>
@@ -194,12 +201,12 @@
                 <a href="www.youtube.com/@xbox"><i class="fab fa-youtube fa-beat-fade"></i></a>
             </p>
 
-            <p>Subscribe to our newsletter for exclusive content and special offers:</p>
+            <!-- <p>Subscribe to our newsletter for exclusive content and special offers:</p>
             <form action="subscribe.html" method="post">
                 <label for="newsletter-email">Email:</label>
                 <input type="email" id="newsletter-email" name="newsletter-email" required>
                 <button type="submit">Subscribe</button>
-            </form>
+            </form> -->
             <p>Need help? Visit our <a href="#">FAQ page</a> for answers to common questions.</p>
         </div>
     </section>
@@ -234,7 +241,7 @@
                         <label for="newsletter-email">Email:</label>
                         <input type="email" id="newsletter-email" name="newsletter-email" required>
                         <a href="successful_subs.html" class="button-link">
-                            <button type="button">Subscribe</button>
+                            <button type="button" class="subscribe-btn">Subscribe</button>
                         </a>
                     </form>
                 </div>
